@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="lib" path="META-INF/lib/guava-21.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="META-INF/lib/gson-2.2.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="META-INF/lib/httpmime-4.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="META-INF/lib/apache-httpcomponents-httpcore.jar"/>
+	<classpathentry exported="true" kind="lib" path="META-INF/lib/apache-httpcomponents-httpclient.jar"/>
+	<classpathentry exported="true" kind="lib" path="META-INF/lib/javax.xml-1.3.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="META-INF/lib/org.apache.commons.collections.jar"/>
+	<classpathentry exported="true" kind="lib" path="META-INF/lib/org.eclipse.core.runtime-3.1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="META-INF/lib/org.eclipse.e4.core.di.jar"/>
+	<classpathentry exported="true" kind="lib" path="META-INF/lib/org.eclipse.jdt.core_3.2.0.v_671.jar"/>
+	<classpathentry exported="true" kind="lib" path="META-INF/lib/org.eclipse.jface.text_3.5.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="META-INF/lib/org.eclipse.text_3.5.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="META-INF/lib/org.eclipse.ui.console_3.5.100.v20110511.jar"/>
+	<classpathentry exported="true" kind="lib" path="META-INF/lib/serializer-2.7.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="META-INF/lib/w3c-dom.jar"/>
+	<classpathentry exported="true" kind="lib" path="META-INF/lib/xalan.jar"/>
+	<classpathentry exported="true" kind="lib" path="META-INF/lib/xerces-2_6_2.jar"/>
+	<classpathentry exported="true" kind="lib" path="META-INF/lib/org.eclipse.debug.ui-3.3.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="META-INF/lib/commons-io-2.5.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="E:/commons-io-2.5/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="E:/org.eclipse.jdt.core_3.2.0.v_671.jar/org.eclipse.jdt.core_3.2.0.v_671.jar"/>
+	<classpathentry kind="lib" path="E:/jars/javax.xml-1.3.4.jar/javax.xml-1.3.4.jar"/>
+	<classpathentry kind="lib" path="E:/jars/w3c-dom.jar/w3c-dom.jar"/>
+	<classpathentry kind="lib" path="E:/jars/xerces-2_6_2.jar/xerces-2_6_2.jar"/>
+	<classpathentry kind="lib" path="E:/jars/xalan.jar/xalan.jar"/>
+	<classpathentry kind="lib" path="E:/jars/serializer-2.7.0.jar/serializer-2.7.0.jar"/>
+	<classpathentry kind="lib" path="E:/jars/org.eclipse.core.runtime-3.1.0.jar/org.eclipse.core.runtime-3.1.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

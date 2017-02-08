@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.commands"> 
+      <category
+            name="Sample Category"
+            id="org.eclipse.rasp.prudle.studio.plugin.commands.category">
+      </category>
+      <command
+            name="Sample Command"
+            categoryId="org.eclipse.rasp.prudle.studio.plugin.commands.category"
+            id="org.eclipse.rasp.prudle.studio.plugin.commands.sampleCommand">
+      </command> 
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers"> 
+      <handler
+            commandId="org.eclipse.rasp.prudle.studio.plugin.commands.sampleCommand"
+            class="org.eclipse.rasp.prudle.studio.plugin.handlers.PrudleStudio">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="org.eclipse.rasp.prudle.studio.plugin.commands.sampleCommand"
+            contextId="org.eclipse.ui.contexts.window"
+            sequence="M1+6"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               label="Prudle Studio"
+               mnemonic="M"
+               id="org.eclipse.rasp.prudle.studio.plugin.menus.sampleMenu">
+            <command
+                  commandId="org.eclipse.rasp.prudle.studio.plugin.commands.sampleCommand"
+                  mnemonic="S"
+                  id="org.eclipse.rasp.prudle.studio.plugin.menus.sampleCommand">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="org.eclipse.rasp.prudle.studio.plugin.toolbars.sampleToolbar">
+            <command
+                  commandId="org.eclipse.rasp.prudle.studio.plugin.commands.sampleCommand"
+                  icon="icons/sample.gif"
+                  tooltip="Prudle Studio"
+                  id="org.eclipse.rasp.prudle.studio.plugin.toolbars.sampleCommand">
+            </command>
+         </toolbar>
+      </menuContribution>
+      
+   </extension>
+   
+   <extension 
+   
+   		point="org.eclipse.ui.popupMenus"> 
+   		<viewerContribution 
+      		id="org.eclipse.rasp.prudle.studio.plugin.navigator"
+   			targetID="org.eclipse.ui.views.ResourceNavigator"> 
+
+   		<menu
+         	id="org.eclipse.rasp.prudle.studio.plugin.navigator.subMenu"
+         	label="Prudle Studio"
+         	path="additions">
+      		<separator name="group1"/>
+   		</menu>
+   
+      <action
+         id="org.eclipse.rasp.prudle.studio.plugin.navigator.action1" 
+         label="Scan"
+         icon="icons/red_dot.gif"
+   	     menubarPath="org.eclipse.rasp.prudle.studio.plugin.navigator.subMenu/group1" 
+         class="org.eclipse.rasp.prudle.studio.plugin.scan.ScanAction">
+      </action> 
+      
+      <action
+         id="org.eclipse.rasp.prudle.studio.plugin.navigator.action2" 
+         label="Internationalize"
+         icon="icons/red_dot.gif"
+      	 menubarPath="org.eclipse.rasp.prudle.studio.plugin.navigator.subMenu/group1" 
+         class="org.eclipse.rasp.prudle.studio.plugin.internationalization.InternationalizationAction">
+      </action>
+      
+       <action
+         id="org.eclipse.rasp.prudle.studio.plugin.navigator.action3" 
+         label="Login"
+         icon="icons/red_dot.gif"
+      	 menubarPath="org.eclipse.rasp.prudle.studio.plugin.navigator.subMenu/group1" 
+         class="org.eclipse.rasp.prudle.studio.plugin.handlers.EnterCredentialsHandler">
+      </action>
+      
+      <action
+         id="org.eclipse.rasp.prudle.studio.plugin.navigator.action4" 
+         label="Upload"
+         icon="icons/red_dot.gif"
+      	 menubarPath="org.eclipse.rasp.prudle.studio.plugin.navigator.subMenu/group1" 
+         class="org.eclipse.rasp.prudle.studio.plugin.scan.ScanAction">
+      </action>
+      
+      <action
+         id="org.eclipse.rasp.prudle.studio.plugin.navigator.action5" 
+         label="Configuration Settings"
+         icon="icons/red_dot.gif"
+      	 menubarPath="org.eclipse.rasp.prudle.studio.plugin.navigator.subMenu/group1" 
+         class="org.eclipse.rasp.prudle.studio.plugin.handlers.ConfigurationHandler">
+      </action>
+
+       
+   </viewerContribution>
+   
+   </extension>
+   
+      <extension 
+   
+   		point="org.eclipse.ui.popupMenus"> 
+   		<viewerContribution 
+      		id="org.eclipse.rasp.prudle.studio.plugin.explorer"
+   			targetID="org.eclipse.jdt.ui.PackageExplorer"> 
+
+   		<menu
+         	id="org.eclipse.rasp.prudle.studio.plugin.navigator.subMenu"
+         	label="Prudle Studio"
+         	path="additions">
+      		<separator name="group1"/>
+   		</menu>
+   
+      <action
+         id="org.eclipse.rasp.prudle.studio.plugin.navigator.action1" 
+         label="Scan"
+         icon="icons/red_dot.gif"
+   	     menubarPath="org.eclipse.rasp.prudle.studio.plugin.navigator.subMenu/group1" 
+         class="org.eclipse.rasp.prudle.studio.plugin.scan.ScanAction">
+      </action> 
+      
+      <action
+         id="org.eclipse.rasp.prudle.studio.plugin.navigator.action2" 
+         label="Internationalize"
+         icon="icons/red_dot.gif"
+      	 menubarPath="org.eclipse.rasp.prudle.studio.plugin.navigator.subMenu/group1" 
+         class="org.eclipse.rasp.prudle.studio.plugin.internationalization.InternationalizationAction">
+      </action>
+      
+       <action
+         id="org.eclipse.rasp.prudle.studio.plugin.navigator.action3" 
+         label="Login"
+         icon="icons/red_dot.gif"
+      	 menubarPath="org.eclipse.rasp.prudle.studio.plugin.navigator.subMenu/group1" 
+         class="org.eclipse.rasp.prudle.studio.plugin.handlers.EnterCredentialsHandler">
+      </action>
+      
+      <action
+         id="org.eclipse.rasp.prudle.studio.plugin.navigator.action4" 
+         label="Upload"
+         icon="icons/red_dot.gif"
+      	 menubarPath="org.eclipse.rasp.prudle.studio.plugin.navigator.subMenu/group1" 
+         class="org.eclipse.rasp.prudle.studio.plugin.scan.ScanAction">
+      </action>
+      
+      <action
+         id="org.eclipse.rasp.prudle.studio.plugin.navigator.action5" 
+         label="Configuration Settings"
+         icon="icons/red_dot.gif"
+      	 menubarPath="org.eclipse.rasp.prudle.studio.plugin.navigator.subMenu/group1" 
+         class="org.eclipse.rasp.prudle.studio.plugin.handlers.ConfigurationHandler">
+      </action>
+
+       
+   </viewerContribution>
+   
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.perspectives">
+         
+       	 <perspective
+            class="org.eclipse.rasp.prudle.studio.plugin.perspective.PerspectiveFactory"
+            fixed="true"
+            id="org.eclipse.rasp.prudle.studio.plugin.perspective.perspective1"
+            name="Prudle Studio">
+      	 </perspective>
+         
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions"
+         class="org.eclipse.rasp.prudle.studio.plugin.perspective.PerspectiveFactory">         
+         
+         <perspectiveExtension
+            targetID="org.eclipse.rasp.prudle.studio.plugin.perspective.perspective1">
+            <view
+            
+                  id="org.eclipse.jdt.ui.PackageExplorer"
+                  minimized="false"
+                  moveable="false"
+                  ratio="0.5"
+                  relationship="left"
+                  relative="org.eclipse.ui.console.ConsoleView"
+                  visible="true">
+                  
+            </view>   
+ 
+            <view
+            
+                  id="org.eclipse.ui.console.ConsoleView"
+                  minimized="false"
+                  moveable="false"
+                  ratio="0.5"
+                  relationship="right"
+                  relative="org.eclipse.jdt.ui.PackageExplorer"
+                  visible="true">
+                  
+            </view>
+ 
+      </perspectiveExtension>
+         
+   </extension>
+   
+   <extension
+     point = "org.eclipse.ui.propertyPages">
+        <viewerContribution 
+      		id="org.eclipse.rasp.prudle.studio.plugin.navigator"
+   			targetID="org.eclipse.ui.views.ResourceNavigator"> 
+        			
+        <page
+           id="org.eclipse.ui.examples.readmetool.FilePage"
+           name="Custom Properties"
+           label="Custom Properties"
+	   	   objectClass="org.eclipse.core.resources.IFile"
+	       class="org.eclipse.ui.examples.readmetool.ReadmeFilePropertyPage">
+        </page>
+        
+         </viewerContribution>
+
+  </extension>
+  
+     <extension
+         point="org.eclipse.ui.console.consolePatternMatchListeners">
+      <consolePatternMatchListener
+            class="org.eclipse.rasp.prudle.studio.plugin.scan.ExampleConsolePatternMatcher"
+            id="org.eclipse.rasp.prudle.studio.plugin.scan.ExampleConsolePatternMatcher"
+            regex=".*foo.*">
+         <enablement>
+            <test property="org.eclipse.ui.console.consoleTypeTest" value="exampleConsole"/>
+         </enablement>
+      </consolePatternMatchListener>
+   </extension>
+
+</plugin>
